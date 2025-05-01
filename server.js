@@ -25,7 +25,7 @@ app.use(cors({
   credentials: true, // if you use cookies or Authorization headers
 }));
 
-
+app.options('*', cors());
 connectDB();
 
 // Routes
